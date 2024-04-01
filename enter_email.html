@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Email Subject</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        .submit-button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enter Email Subject:</h1>
+    <form id="email-form" onsubmit="submitEmail(event)">
+        <input type="text" id="email-subject" name="email-subject"><br><br>
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <script>
+        function submitEmail(event) {
+            event.preventDefault();
+            document.getElementById("email-form").submit();
+        }
+    </script>
+</body>
+</html>
